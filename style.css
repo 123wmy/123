@@ -1,0 +1,678 @@
+@charset "utf-8";
+/*公共CSS*/
+*{   
+    margin: 0;
+    padding: 0;
+	font-family:"楷体";
+}
+
+ .d{
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 700px;
+	margin: 0 auto;
+	background-image:url(sucai/b.jpg);
+}
+.d1{
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 700px;
+	margin: 0 auto;
+	background-color: #505C83;
+}
+/*index CSS*/
+	.di{                    /*固定DIV位置*/
+		position: absolute;	
+		width: 300px;
+		height: 700px;
+		left: 0;
+	}
+	.di1{
+		position: absolute;	
+		width: 300px;
+		height: 700px;
+		left: 300px;
+	
+	}
+	.di2{
+		position: absolute;	
+		width: 300px;
+		height: 700px;
+		left: 600px;	
+	}
+.di3{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	left: 70px;
+	top:70px;
+	z-index: 1;
+}
+.di4{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	left: 500px;
+	top:500px;
+	z-index: 1;
+}
+ .photo{
+	position: absolute;
+	left: 0;
+    top:250px;
+	z-index: 1;
+}
+/*链接样式*/
+.anniu{
+display:block;
+width:30px;
+height:160px;
+background-color:white;
+color:goldenrod;
+text-align:center;
+font-size:30px;
+line-height:40px;
+border-radius: 25px;
+border:none;
+box-shadow:none;
+text-decoration: none;
+transition: box-shadow 0.5s;
+-webkit-transition: box-shadow 0.5s;
+-ms-transition: box-shadow 0.5s;
+-moz-transition: box-shadow 0.5s;
+}
+.btn1{
+	position: absolute;
+	top:35%;
+	left: 45%;
+	z-index: 1;
+}
+
+.anniu:hover{
+    box-shadow:0px 0px 5px 1px #808080;
+}
+.anniu:active{
+    box-shadow:0px 0px 5px 1px #FF0000;
+}
+/*按钮缩放动画效果*/
+.anniu{
+    -webkit-animation: free_download 1s linear alternate infinite;
+    animation: free_download 1s linear alternate infinite;
+}
+@-webkit-keyframes free_download{
+    0%{transform:scale(0.9);}
+    100%{transform:scale(1);}
+}
+@keyframes free_download{
+    0%{transform:scale(0.9);}
+    100%{transform:scale(1);}
+}
+html,body{      /*隐藏滚动条*/
+    overflow:Scroll;
+	overflow-y:hidden;
+	overflow-x:hidden;
+    justify-content: center;
+	 -webkit-justify-content: center;
+	 -ms-justify-content: center;
+	 -moz-justify-content: center;
+    align-items: center; 
+	-webkit-align-items:center;
+	-ms-align-items:center;
+	-moz-align-items:center;
+}
+/*1.html CSS*/
+.g{                       /*动态选项整体位置*/
+		 
+		  position: absolute;	
+		  width: 700px;
+		  height: 400px;
+		  left: 200px;
+		  top:30px;
+	  }
+	  .bj{                         /*马车背景图设置*/
+		  
+		  position: absolute;	
+		  width: 500px;
+		  height: 350px;
+		  top:255px;
+		  left: 200px;
+		  background-image: url(sucai/div1.jpg);
+		  z-index: 0;
+		  opacity:0.1;filter:alpha(opacity=10)/*透明度设置*/
+	  }
+	  .xi{
+		  position: absolute;
+		  width: 100px;
+		  height: 100px;
+		  top:10px;
+		  left: -150px;
+	  }
+	  .la{
+		  position: absolute;
+		  width: 100px;
+		  height: 100px;
+		  top:10px;
+		  left: 70px;
+	  }
+	  .shen{
+		  position: absolute;
+		  width: 100px;
+		  height: 100px;
+		  top:10px;
+		  left: 290px;
+	  }
+	  .hua{
+		  position: absolute;
+		  width: 100px;
+		  height: 100px;
+		  top:10px;
+		  left: 510px;
+	  }
+  
+    #container div {
+      width: 500px;
+      height: 400px;
+      border: 3px solid white;
+      display: none;/*display 属性规定元素应该生成的框的类型、none：此元素不会被显示*/
+      margin-top: 170px;/*padding-top:10px;是指容器内的内容距离容器的顶部有10个像素，是包含在容器内的；margin-top:10px;是指容器本身的顶部距离其他容器有10个像素，不包含在容器内；top:10px;是指容器本身的顶部距离页面的顶端有10个像素*/
+      line-height: 30px;
+      font-size: 20px;
+	  z-index: -1;
+	  font-style: normal;
+	  font-weight: bolder;
+    }
+    #container div.active {
+      display: block;/*此元素将显示为块级元素*/
+    }
+   
+	  
+.link{
+		  position: absolute;
+		  width: 200px;
+		  height: 100px;
+		  top:590px;
+		  left: 0;
+	 }
+.link1{
+		  position: absolute;
+		  width: 200px;
+		  height: 100px;
+		  top:590px;
+		  left: 702px;
+	  }
+/*2.html CSS*/
+p{
+	height: 170px;
+	width: 250px;
+	position: absolute;
+	top: 13px;
+	left: -50px;
+	z-index: 1;
+}
+h2{
+	position: absolute;
+	top: -10px;
+	width: 250px;
+	left: -50px;
+	z-index: 1;
+}
+.container{
+    position: relative;
+    height: 600px;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+	 -webkit-justify-content: center;
+	 -ms-justify-content: center;
+	 -moz-justify-content: center;
+    align-items: center;
+	-webkit-align-items:center;
+	-ms-align-items:center;
+	-moz-align-items:center;
+    flex-wrap: wrap;/*Internet Explorer 10 及更早版本浏览器不支持 flex-wrap 属性*/
+	-webkit-flex-wrap:wrap;/*让弹性盒元素在必要的时候拆行*/
+    padding: 30px;
+	left: -100px;
+	top:-200px
+    
+	
+}
+
+.container .card{
+    margin-top: 10px;
+    position: relative;
+    max-width: 150px;
+    height: 115px;
+    background:#fff ;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;/*项目垂直显示*/
+	 -webkit-flex-direction: column; /* Safari 6.1+ */
+    box-shadow: 0 5px 10px gold;
+    transition: .1s ease-in-out;/*动画先慢后快*/
+}
+
+.container .card:hover{
+    height: 220px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    top: -100px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 30px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;/*使元素不可见*/
+    opacity: 0;
+    transition: .1s ease-in-out;
+	width: 80px;
+	height: 150px;
+}
+.content{
+	width: 160px;
+	height: 160px;
+	margin-top: 40px;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;/*元素的不透明级别*/
+    margin-top: -20px;
+    transition-delay: .1s;/*两秒后切换效果，IE9以下不支持*/
+	-webkit-transition-delay:.1s;/* Safari*/
+}
+.b{                      /*返回上一页div CSS*/
+	position: fixed;
+	width: 200px;
+	height: 100px;
+	top:570px;	
+}
+/* 返回键*/
+ .button {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);/*linear-gradient(direction, color-stop1, color-stop2, ...)Internet Explorer 8 及之前的版本不支持渐变*/
+    display: inline-block;/*在同一行且可设计宽高*/
+	padding: 3px;/*设置内边距*/
+    border-radius: 7px;/*圆角边框*/
+    text-decoration: none;/*无文本修饰*/
+    position: relative;/*按照元素的原始位置对该元素进行移动。*/
+}
+  .button span {
+    display: inline-block;/*行内块元素*/
+    background:#505C83;
+    color:black;/*字体颜色*/
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+#span{
+	 display: inline-block;/*行内块元素*/
+    background:#505C83;
+    color:black;/*字体颜色*/
+    padding: 1px 1px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+#span1{
+	 display: inline-block;/*行内块元素*/
+    background:#505C83;
+    color:black;/*字体颜色*/
+    padding: 1px 1px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+#span2{
+	 display: inline-block;/*行内块元素*/
+    background:#505C83;
+    color:black;/*字体颜色*/
+    padding: 1px 1px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+#span3{
+	 display: inline-block;/*行内块元素*/
+    background:#505C83;
+    color:black;/*字体颜色*/
+    padding: 1px 1px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+/*3.html CSS*/
+.dii{
+		position: absolute;
+		margin-top: 580px;
+		margin-left: 60px;
+	}
+.di11{
+		position: absolute;
+		margin-top: 580px;
+		margin-left: 400px;
+	}
+#shi
+{                  /*诗歌CSS*/
+    font-size:18px;
+    color:#09F;
+    height:500px;
+    font-weight:bold;
+    width:400px;
+	font-family:'STFangsong'；
+	}
+
+.card{
+	width: 300px;
+	height: 300px;
+	background-color:#505C83;
+	position: absolute;
+	top: 40%;
+	left: 22%;	
+	-ms-transform:translate(-50%,-30%); /* IE 9 */
+    -webkit-transform:translate(-50%,-30%); /* Safari and Chrome */
+	transform: translate(-50%,-30%);/*2D转换*/
+	transition: all 1s ease;/*所有属性1秒内由慢变快过渡*/
+}
+.card-outside,.card-inside{
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 300px;
+}
+.card-outside{
+	z-index: 100;/*元素的堆叠顺序*/
+	perspective: 1000px;
+	-webkit-perspective:1000px; /* Safari and Chrome */
+}
+.card-outside-container{
+	width:100%;
+	height: 100%;
+	transform-style: preserve-3d;/*让转换的子元素保留3D转换*/
+	-webkit-transform-style: preserve-3d; /* Safari and Chrome */
+	transform-origin: left;/*设置旋转元素基点位置*/
+	transition: all 1s ease;
+}
+.card:hover .card-outside-container{
+	transform:rotateY(-180deg);/*沿Y轴的旋转E3D9C6*/
+}
+.card:hover{
+	width:300px;
+}
+.card-front,.card-back{
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	background-color: #505C83;
+
+}
+.card-front-top{
+	width:100%;
+	height: 300px;
+	background: linear-gradient(to bottom,#ff73b9,#ff40a1);/*线性渐变*/
+	clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)；/*多边形裁剪路径*/
+}
+.card-front-top img{
+	width:100%;
+	height:100%;
+}
+.card-front-bot{
+	font-size:26px;
+	color:#761111;
+	font-weight: 800;
+	text-align: center;
+	
+}
+.card-back{
+	transform: rotateY(180deg);
+	width: 300px;
+	height: 240px;
+	z-index: 0;
+}
+.video-container{
+	width:300px;
+	height: 100%;
+	object-fit: cover;
+/*	clip-path:polygon(0 0,100% 0,90% 50%,100% 100%,0 100%);*/
+	z-index: 99;
+}
+.card-inside{
+	z-index: 99;
+}
+.card-inside-container{
+	width: 200px;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+    justify-content: flex-end;/*项目位于容器的结尾*/
+	-webkit-align-items: center; /* Safari 7.0+ */
+	align-items: center;/*Internet Explorer 10 及更早版本浏览器不支持 align-items 属性*/
+	text-align: center;	
+	font-size: 24px;
+	font-weight: 800;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #505C83;
+}
+.card-inside-container p{
+	color: #333;
+	font-size: 20px;
+}
+.card-inside-container .btn{
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	border: 3px solid #ff40a1;
+	border-radius: 5px;
+}
+.tu{
+	position: absolute;
+	margin-left: 650px;
+	margin-top: 500px;
+}
+/*.kuang{
+	position: absolute;
+	margin-left: 470px;
+	margin-top: 50px;
+	border:4px solid #96C2F1;
+    background-color:#EFF7FF;
+	width: 500px;
+	height: 600px;
+}*/
+.pu{
+	position: absolute;
+	top:420px;
+	left: 250px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.coolscrollbar{
+	scrollbar-arrow-color:yellow;
+	scrollbar-base-color:lightsalmon;
+	font-size: 22px;
+	overflow-x:hidden;width: 380px;height: 500px;
+	background-color:#505C83;
+	Scrollbar-3Dlight-Color:red;
+}
+.roll{
+	position: absolute;
+	top:40px;
+	font-size: 22px;
+	left: 500px;
+	background-color: #1A098A;
+	border-color: #1A098A;
+	border-width:2px;
+	
+}
+/*4.html CSS*/
+.wrapper{
+	position: fixed;
+	margin-top: 50px;
+	margin-left: 10px;
+    width: 450px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);	
+}
+
+.wrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input{       /**/
+    height: 100%;
+    width: 100%;
+    border : none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus ~ label,.input-data input:valid ~ label{/*focus:选择获得焦点的输入字段，并设置其样式valid:针对任意内容通过验证的 <input> 或其他 <form> 元素，修改样式*/
+    transform: translateY(-30px);/*沿Y轴平移*/
+    font-size: 15px;
+    color: #4158d0;
+}
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-event: none;/*元素不会成为鼠标事件的target*/
+    transition: all 0.3s ease;
+}
+.wrapper .input-data .underline{
+    position: absolute;
+    bottom: 0px;/*去除间隙*/
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);/*通过设置 X 轴的值来定义缩放转换*/
+    transition: transform 0.5s ease;
+}
+.input-data input:focus ~ .underline:before,.input-data input:valid ~ .underline:before{
+    transform: scaleX(1);
+}
+	.bi1{
+		position: absolute;
+		margin-top: 290px;
+		height: 500px;
+		width: 400px;
+	}
+	.div2{
+		position: absolute;
+		margin-top: 390px;
+		margin-left: 100px;
+		height: 100px;
+		width: 100px;
+	}
+	.div3{
+		position: absolute;
+		margin-top: 320px;
+		margin-left: 190px;
+		height: 100px;
+		width: 100px;
+	}
+	.div4{
+		position: absolute;
+		margin-top: 350px;
+		margin-left: 20px;
+		height: 100px;
+		width: 100px;
+}
+.card1{
+  position: absolute; /* 绝对定位 */
+  top:350px; /* 距上部 */
+  left: 640px; /* 距左部 */
+  width: 300px;
+  height: 370px;
+  background: #fff;
+  transform-style: preserve-3d; /* 开启3D空间 */
+  transform: translate(-50%,-50%) perspective(2000px); /* 移动X,Y */
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5); /*阴影*/
+  transition: 1s;
+}
+.card1:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+.card1::before{ /*上边框*/ 
+  content: '';
+  position: absolute;
+  top:-5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  z-index: 10;
+  background: #475b02;
+  transform: skewX(-45deg); /*X轴扭曲*/
+}
+.card1::after{ /*右边框*/
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background-color: #7ea301;
+}
+.card1 .imgBox{ /*图片*/
+  user-select: none; /*不可选取*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: left; /*更改元素变形位置*/
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+
+}
+.card1:hover .imgBox{
+  transform: rotateY(-155deg); /*Y轴转动，翻书效果*/
+}
+.card1 .details{ /*文本效果*/
+  position: absolute;
+  top:0;
+  left: 0;
+  -moz-box-sizing:border-box; /* Firefox */
+  box-sizing: border-box;/*规定容器元素的最终尺寸计算方式*/
+  padding: 40px;
+  z-index: -1;/*防止文字溢出*/
+}
+.bi{
+		position: absolute;
+		margin-top: 580px;
+		margin-left: 740px;
+}
+.h{
+	align-items: center;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 130px
+}
+.p1{
+	align-items: center;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 80px	
+}
